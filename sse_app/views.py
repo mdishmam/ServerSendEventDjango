@@ -15,4 +15,3 @@ def sse_stream(request):
     response = StreamingHttpResponse(event_stream(), content_type='text/event-stream')
     response['Cache-Control'] = 'no-cache'
     return response
-
